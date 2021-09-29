@@ -1,0 +1,27 @@
+WidgetsExample:
+
+<WidgetsExample>:
+    orientation: "vertical"
+    cols:4
+#    Label:
+ #       text: root.name
+  #      font_size: "10dp"
+   # Button:
+    #    text: "+"
+     #   on_press: root.change_name()
+      #  size_hint: .1,.05
+       # pos_hint:{"center_x": .8}
+    Label:
+        text: root.times
+        font_name: "Lcd.ttf"
+        font_size: "100dp"
+    Button:
+        text: "+"
+        on_press: root.plus()
+        size_hint: .7,.5
+        pos_hint:{"center_x": .5}
+    Button:
+        text: "-"
+        on_press: root.minus()
+        size_hint: .7,.5
+        pos_hint:{"center_x": .5}
